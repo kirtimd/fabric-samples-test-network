@@ -21,6 +21,7 @@ export ORDERER_ADMIN_TLS_PRIVATE_KEY=${PWD}/organizations/ordererOrganizations/e
 # Set environment variables for the peer org
 setGlobals() {
   local USING_ORG=""
+  echo "TEST"
   if [ -z "$OVERRIDE_ORG" ]; then
     USING_ORG=$1
   else
